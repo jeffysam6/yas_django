@@ -1,0 +1,8 @@
+Park: {{ park.name }}
+<br>
+Photos:
+{% for photo in park.photos.all %}
+<p>
+    <img src="{{ photo.image.url }}" alt="{{ photo.name }}">
+</p>
+{% endfor %}
