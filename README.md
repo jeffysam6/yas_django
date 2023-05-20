@@ -15,4 +15,4 @@ Requirements
 
 - Delivered as a public fork of this GitHub repository, with a PR with your changes. 
 
-- You can implement whatever cache backend you want, a plus would be to add it in the docker-compose file.
+- You can implement whatever cache backend you want, a plus would be to add whatever it needs in the docker-compose file.
