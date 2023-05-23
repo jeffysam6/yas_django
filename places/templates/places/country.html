@@ -1,0 +1,8 @@
+Country: {{ country.name }}
+<br>
+Parks:
+<ol>
+{% for park in parks %}
+    <li>{{ park.0 }} - Avg Rating {{ park.1 }} </li>
+{% endfor %}
+</ol>

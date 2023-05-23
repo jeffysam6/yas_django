@@ -11,7 +11,7 @@ class Country(models.Model):
     
 class Park(models.Model):
     name = models.CharField(max_length=255)
-    country = models.ForeignKey(Country, on_delete=models.CASCADE)
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='parks')
 
     def __str__(self):
         return self.name

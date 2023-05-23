@@ -1,8 +1,13 @@
 Park: {{ park.name }}
 <br>
 Photos:
-{% for photo in park.photos.all %}
+{% for photo in photos %}
 <p>
-    <img src="{{ photo.image.url }}" alt="{{ photo.name }}">
+    <img src="{{ photo.image_url }}" alt="{{ photo.name }}">
 </p>
 {% endfor %}
+<ul>
+{% for review in reviews %}
+    <li>Rating: {{ review.rating }} Comment: {{ review.comment }}</li>
+{% endfor %}
+</ul>
